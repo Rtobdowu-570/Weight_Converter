@@ -1,0 +1,118 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 18rem;
+    width: 100%;
+}
+
+/* Row styling */
+.row {
+    margin-bottom: 20px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Form styling */
+.form-group {
+    display: flex;
+    justify-content: center;
+}
+
+/* Input styling */
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+input[type="number"]:hover {
+    border-color: #45a049;
+}
+
+/* Output styling */
+.output {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 520px;
+    gap: 20px; /* Add space between label and value */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.card span {
+    font-size: 1.5em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    input[type="number"] {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
